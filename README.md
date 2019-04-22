@@ -1,5 +1,4 @@
-# HFDP_ABAP
-Head First Design Patterns in ABAP
+# Head First Design Patterns in ABAP
 
 ## Chapter 1 - Strategy
 
