@@ -2,14 +2,14 @@ CLASS zcl_simuduck_mallard_duck DEFINITION
   PUBLIC INHERITING FROM zcl_simuduck_duck
   CREATE PUBLIC .
 
-PUBLIC SECTION.
+  PUBLIC SECTION.
 
     METHODS:
-        constructor,
-        display REDEFINITION.
+      constructor,
+      display REDEFINITION.
 
-PROTECTED SECTION.
-PRIVATE SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 
 ENDCLASS.
 
@@ -21,8 +21,8 @@ CLASS zcl_simuduck_mallard_duck IMPLEMENTATION.
 
   METHOD constructor.
     super->constructor( ).
-    me->fly_behaviour = NEW zcl_simuduck_fly_with_wings( ).
-    me->quack_behaviour = NEW zcl_simuduck_quack( ).
+    me->m_fly_behaviour = NEW zcl_simuduck_fly_with_wings( ).
+    me->m_quack_behaviour = NEW zcl_simuduck_quack( ).
   ENDMETHOD.
 
 ENDCLASS.

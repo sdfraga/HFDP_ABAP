@@ -1,5 +1,3 @@
-INTERFACE zif_simuduck_quack_behaviour
-  PUBLIC .
-    METHODS:
-        quack.
+INTERFACE zif_simuduck_quack_behaviour PUBLIC.
+  METHODS quack.
 ENDINTERFACE.

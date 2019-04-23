@@ -1,5 +1,3 @@
-interface ZIF_SIMUDUCK_FLY_BEHAVIOUR
-  public .
-    METHODS:
-        fly.
-endinterface.
+INTERFACE zif_simuduck_fly_behaviour PUBLIC.
+  METHODS fly.
+ENDINTERFACE.

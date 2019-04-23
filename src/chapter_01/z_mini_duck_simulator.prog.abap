@@ -8,7 +8,7 @@ REPORT z_mini_duck_simulator.
 CLASS lcl_miniducksim DEFINITION CREATE PRIVATE.
 
   PUBLIC SECTION.
-   CLASS-METHODS main.
+    CLASS-METHODS main.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
@@ -30,4 +30,4 @@ CLASS lcl_miniducksim IMPLEMENTATION.
 ENDCLASS.
 
 START-OF-SELECTION.
-    lcl_miniducksim=>main( ).
+  lcl_miniducksim=>main( ).
