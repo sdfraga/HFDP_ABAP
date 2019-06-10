@@ -25,7 +25,7 @@ CLASS zcl_mocha IMPLEMENTATION.
 
   METHOD cost.
 
-    DATA test TYPE string.
+    DATA test2 TYPE string.
 
     return = '0.20' + me->beverage->cost( ).
   ENDMETHOD.
