@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Sdfraga/HFDP_ABAP.svg?branch=master)](https://travis-ci.com/Sdfraga/HFDP_ABAP)
+
 # Head First Design Patterns in ABAP
 
 ## Chapter 1 - Strategy
