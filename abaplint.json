@@ -7,6 +7,10 @@
       "enabled": true,
       "ignoreExceptions": true
     },
+    "check_variables": {
+      "enabled": false,
+      "exclude": []
+    },
     "line_length": {
       "enabled": true,
       "length": 80
