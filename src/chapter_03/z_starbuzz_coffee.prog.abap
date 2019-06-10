@@ -23,12 +23,27 @@ CLASS lcl_starbuzz_coffee IMPLEMENTATION.
     WRITE: /, |{ expresso->get_description( ) } ${ expresso->cost( ) }|.
 
     " Double Mocha Soy Late with Whip
-    DATA(doublemocha_soylate_whip) = NEW zcl_whip( NEW zcl_mocha( NEW zcl_mocha( CAST zcl_beverage( NEW zcl_dark_roast( ) ) ) ) ).
-    WRITE: /, |{ doublemocha_soylate_whip->get_description( ) } ${ doublemocha_soylate_whip->cost( ) }|.
+    DATA(doublemocha_soylate_whip) =
+        NEW zcl_whip(
+            NEW zcl_mocha(
+                NEW zcl_mocha(
+                    CAST zcl_beverage(
+                        NEW zcl_dark_roast( ) ) ) ) ).
+
+    WRITE: /, |{ doublemocha_soylate_whip->get_description( )
+               } ${ doublemocha_soylate_whip->cost( ) }|.
 
     " HouseBlend with Soy, Mocha and Whip
-    DATA(houseblend_soy_mocha_whip) = NEW zcl_whip( NEW zcl_mocha( NEW zcl_soy( CAST zcl_beverage( NEW zcl_house_blend( ) ) ) ) ).
-    WRITE: /, |{ houseblend_soy_mocha_whip->get_description( ) } ${ round( val = houseblend_soy_mocha_whip->cost( ) dec = 2 ) }|.
+    DATA(houseblend_soy_mocha_whip) =
+        NEW zcl_whip(
+            NEW zcl_mocha(
+                NEW zcl_soy(
+                    CAST zcl_beverage(
+                        NEW zcl_house_blend( ) ) ) ) ).
+
+    WRITE: /, |{ houseblend_soy_mocha_whip->get_description( )
+               } ${ round( val = houseblend_soy_mocha_whip->cost( ) dec = 2 )
+               }|.
 
   ENDMETHOD.
 
