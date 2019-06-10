@@ -12,7 +12,7 @@ CLASS zcl_mocha DEFINITION
       cost REDEFINITION,
       get_description REDEFINITION.
   PRIVATE SECTION.
-    DATA:
+    data:
       beverage TYPE REF TO zcl_beverage.
 ENDCLASS.
 
@@ -20,7 +20,7 @@ CLASS zcl_mocha IMPLEMENTATION.
 
   METHOD constructor.
     super->constructor( ).
-    me->beverage = beverage.
+     me->beverage = beverage.
   ENDMETHOD.
 
   METHOD cost.
